@@ -1,3 +1,4 @@
 activeuserprofiles=PCI121-10;Team
 eclipse.preferences.version=1
 org.eclipse.rse.systemtype.local.systemType.defaultUserId=shuishan.wang
+useridperkey=PCI121-10.Local\=shuishan.wang;
