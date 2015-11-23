@@ -23,7 +23,7 @@ public class ApplicationSession {
 		Locale.setDefault(Locale.US);
 		
 		locale = Locale.getDefault();
-		resourceBundle = ResourceBundle.getBundle("res.properties", locale);
+		resourceBundle = ResourceBundle.getBundle("edu.iut.resources.strings.res", locale);
 		sessionGuiLogger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 		sessionGuiLogger.setLevel(Level.ALL);
 		sessionExceptionLogger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
@@ -48,7 +48,7 @@ public class ApplicationSession {
 	public void setLocale(Locale locale){
 		this.locale = locale;
 		Locale.setDefault(this.locale);
-		resourceBundle = ResourceBundle.getBundle("res.properties", locale);
+		resourceBundle = ResourceBundle.getBundle("edu.iut.resources.strings.res", locale);
 	}
 	
 	public String getString(String key) {
