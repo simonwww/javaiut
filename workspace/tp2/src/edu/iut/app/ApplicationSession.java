@@ -26,7 +26,7 @@ public class ApplicationSession {
 		resourceBundle = ResourceBundle.getBundle("edu.iut.resources.strings.res", locale);
 		sessionGuiLogger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 		sessionGuiLogger.setLevel(Level.ALL);
-		sessionExceptionLogger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+		sessionExceptionLogger = Logger.getLogger("IUTException");
 		sessionExceptionLogger.setLevel(Level.ALL);
 	}
 	

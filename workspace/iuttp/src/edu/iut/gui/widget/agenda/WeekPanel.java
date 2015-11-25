@@ -6,7 +6,6 @@ import javax.swing.JPanel;
 
 import edu.iut.gui.widget.agenda.AgendaPanelFactory.ActiveView;
 
-
 public class WeekPanel extends EventPanel {
 
 	public enum WeekDayNames {

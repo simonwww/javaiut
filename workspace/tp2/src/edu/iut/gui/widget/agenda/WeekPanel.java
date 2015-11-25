@@ -1,8 +1,6 @@
 package edu.iut.gui.widget.agenda;
 
 import java.awt.GridLayout;
-import java.util.ResourceBundle;
-
 import javax.swing.JPanel;
 
 
@@ -21,7 +19,7 @@ public class WeekPanel extends EventPanel {
 		FRIDAY(ApplicationSession.instance().getString("friday"),ApplicationSession.instance().getString("fri")),
 		SATURDAY(ApplicationSession.instance().getString("saturday"),ApplicationSession.instance().getString("sat")),
 		SUNDAY(ApplicationSession.instance().getString("sunday"),ApplicationSession.instance().getString("sun"));
-		
+				
 		private String name;
 		private String shortName;
 		
@@ -46,8 +44,7 @@ public class WeekPanel extends EventPanel {
 		for (int di = 0;di<7;di++)	{
 			this.add(new DayPanel(ActiveView.WEEK_VIEW,WeekDayNames.values()[di+1]));
 		}
-		
-
 	}
+	
 	
 }
