@@ -6,7 +6,7 @@ import java.io.File;
 
 public class CommandLineParser {
 	
-	protected HashMap<String, CommandLineOption<?>> options;
+	protected HashMap<String, CommandLineOption /* EX1: option generique */> options;
 	protected ArrayList<String> parseErrors;
 		
 	public CommandLineParser() {
@@ -35,8 +35,6 @@ public class CommandLineParser {
 						}
 						break;
 					/* EX1 : reproduire le comportement de 'case FILE', pour STRING,INTEGER, ... */
-						
-						
 
 					default:
 						parseErrors.add("Unrecognize option type.");						

@@ -1,6 +1,6 @@
 package edu.iut.app;
 
-public class CommandLineOption /* EX1 : CLASSE GENERIC SUR le type ValueType */<ValueType> {
+public class CommandLineOption /* EX1 : CLASSE GENERIC SUR le type ValueType */ {
 	
 	public enum OptionType{
 		NONE("None"),
