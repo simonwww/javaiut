@@ -2,7 +2,7 @@ package edu.iut.app;
 
 import java.util.LinkedList;
 
-public class Agenda extends /* EX2: COLLECTION d'ExamEvent */ LinkedList<ExamEvent>{
+public class Agenda extends /* EX2: COLLECTION d'ExamEvent */ ExamEvent {
 	public Agenda() {		
 	}
 	
@@ -10,6 +10,9 @@ public class Agenda extends /* EX2: COLLECTION d'ExamEvent */ LinkedList<ExamEve
 		this.add(examEvent);
 	}
 
-	
+	private void add(ExamEvent examEvent) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
