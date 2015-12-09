@@ -2,8 +2,6 @@ package edu.iut.gui.widget.agenda;
 
 import java.awt.GridLayout;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -52,13 +50,11 @@ public class DayPanel extends EventPanel {
 					i++;
 				}
 			}*/
-			GridLayout daysOfMonthLayout = new GridLayout(7,5);		
-			this.setLayout(daysOfMonthLayout);
-			GregorianCalendar calendar = new GregorianCalendar();		
-			for (int di = 1;di<=calendar.getActualMaximum(Calendar.DAY_OF_MONTH);di++) {
-				JPanel hour = new JPanel();
-				hour.add(new JLabel(new Integer(di).toString()));
-				this.add(hour);
+			while(i<32){
+			JPanel hour = new JPanel();
+			hour.add(new JLabel(new Integer(i).toString()));
+			this.add(hour);
+			i++;
 			}
 		}
 		break ;
